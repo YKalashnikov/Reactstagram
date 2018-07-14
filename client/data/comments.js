@@ -5,6 +5,34 @@ const comments = {
       "user": "heavymetaladam"
     }
   ],
+  "BAcJeJrQca9":[
+    {
+    "text":"daaaaam",
+    "user": "DMX"
+    
+  },
+  {
+    "text":"Looks gorgeous",
+    "user": "Kent"
+    
+  },
+  {
+    "text":"who is winning my man??????",
+    "user": "George"
+    
+  },
+  {
+    "text":"Where is it brooo???",
+    "user": "Alexio"
+    
+  },
+  {
+    "user":"Take me there",
+    "text": "Jamie"
+    
+  },
+
+],
   "BAcyDyQwcXX":[
     {
       "text":"Wes. WE should have lunch.",
@@ -15,8 +43,8 @@ const comments = {
       "user": "jdaveknox"
     },
     {
-      "text":"@jdaveknox yes!",
-      "user": "wesbos"
+      "user":"@jdaveknox yes!",
+      "text": "man"
     },
     {
       "text":"😍 love Hamilton!",

@@ -13,8 +13,8 @@ class Comments extends React.Component {
         return (
           <div className = "comment"  key={i}>
            <p>
-             <strong>{comment.text}</strong>
-              {comment.user}
+             <strong>{comment.user}</strong>
+             {comment.text}
 
               <button className='remove-comment'
               onClick={this.props.removeComment.bind(null,

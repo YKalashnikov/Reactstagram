@@ -3,8 +3,8 @@ const postComments = (state = [], action) => {
   switch(action.type){
     case 'ADD_COMMENT' :
       return [...state, {
-        user: action.author,
-        text: action.comment
+        text: action.author,
+        user: action.comment
       }];
       case 'REMOVE_COMMENT' :
       console.log('new',...state.slice(0, action.i))

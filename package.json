@@ -7,15 +7,12 @@
     "build": "npm run clean && npm run build:webpack",
     "test": "NODE_ENV=production mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
     "clean": "rimraf dist",
-    "start": "node devServer.js"
+    "start": "node devServer.js",
+    "deploy":"gh-pages -d build"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wesbos/Learn-Redux.git"
-  },
-  "author": "Wes Bos",
+  "author": "Yurii Kalashnikov",
   "license": "MIT",
-  "homepage": "https://github.com/wesbos/Learn-Redux",
+  "homepage": "https://github.com/ykalashnikov/instagram",
   "dependencies": {
     "babel-core": "^6.5.2",
     "babel-eslint": "^6.1.2",
@@ -31,6 +28,7 @@
     "eslint-plugin-babel": "^3.1.0",
     "eslint-plugin-react": "^4.1.0",
     "express": "^4.13.4",
+    "gh-pages": "^1.2.0",
     "raven-js": "^2.1.1",
     "react": "^0.14.7",
     "react-addons-css-transition-group": "^0.14.7",
@@ -57,28 +55,52 @@
     "react-addons-test-utils": "^0.14.7"
   },
   "babel": {
-    "presets": ["react", "es2015"],
+    "presets": [
+      "react",
+      "es2015"
+    ],
     "env": {
       "development": {
         "plugins": [
-          ["transform-object-rest-spread"],
-          ["transform-react-display-name"],
-          ["react-transform", {
-            "transforms": [{
-              "transform": "react-transform-hmr",
-              "imports": ["react"],
-              "locals": ["module"]
-            }, {
-              "transform": "react-transform-catch-errors",
-              "imports": ["react", "redbox-react"]
-            }]
-          }]
+          [
+            "transform-object-rest-spread"
+          ],
+          [
+            "transform-react-display-name"
+          ],
+          [
+            "react-transform",
+            {
+              "transforms": [
+                {
+                  "transform": "react-transform-hmr",
+                  "imports": [
+                    "react"
+                  ],
+                  "locals": [
+                    "module"
+                  ]
+                },
+                {
+                  "transform": "react-transform-catch-errors",
+                  "imports": [
+                    "react",
+                    "redbox-react"
+                  ]
+                }
+              ]
+            }
+          ]
         ]
       },
       "production": {
         "plugins": [
-          ["transform-object-rest-spread"],
-          ["transform-react-display-name"]
+          [
+            "transform-object-rest-spread"
+          ],
+          [
+            "transform-react-display-name"
+          ]
         ]
       }
     }
@@ -94,8 +116,14 @@
     },
     "parser": "babel-eslint",
     "rules": {
-      "quotes": [2, "single"],
-      "strict": [2, "never"],
+      "quotes": [
+        2,
+        "single"
+      ],
+      "strict": [
+        2,
+        "never"
+      ],
       "babel/generator-star-spacing": 1,
       "babel/new-cap": 1,
       "babel/object-shorthand": 1,

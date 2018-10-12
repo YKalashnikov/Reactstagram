@@ -1,4 +1,7 @@
-# Learn Redux
+
+<img src='https://github.com/YKalashnikov/Reactstagram/blob/master/reacstagram.gif'/>
+
+#  Reactstagram
 
 A simple React + Redux implementation. 
 
